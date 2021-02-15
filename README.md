@@ -1,42 +1,42 @@
-# DevOps Presentation
+# Presentation Template
 
-## Contents
+## Agenda
 
-- Crystal Ball
-- What is DevOps?
-- CI/CD
-- Help?
-- Real World Examples
+- Bullet 1
+- Bullet 2
+- Bullet 3
+- Bullet 4
+- Bullet 5
 
-## Challenges in SecOps / SoC
+## Slide 1
 
-- Short Staffed, Attrition
-- Distractions from Tactical and Strategic Goals
-- Difficult or Impossible to be Proactive
-- Disparate Systems Don't Directly Together
+- Bullet 1
+- Bullet 2
+- Bullet 3
+- Bullet 4
 
-## What We Do / How We Help
+## Slide 2
 
-- Bring DevOps Practices to Security
-- Version Control, Automated Tests, Automated Deployment
-- Bespoke Automation and Integrations
+- Bullet 1
+- Bullet 2
+- Bullet 3
+- Bullet 4
 
-## Deep Dive
+## Slide 3
 
-- Terraform
-- Sentinel
-- Git
-- Vault, OIDC
-- API Integrations (e.g. VMware/AWS + Tenable.sc + ServiceNow + Puppet)
+- Bullet 1
+- Bullet 2
+- Bullet 3
+- Bullet 4
 
-## Real World Examples
+## Slide 4
 
-### Paved Roads Initiative
+### SubHeading
 
-### Image Scanning API
+### Slide W/ Image
 
 **Note: Needs dark background**
 
 ![Security_Automation](./assets/Security_Automation.png)
 
-### Vulnerability Management
+### Final Slide
