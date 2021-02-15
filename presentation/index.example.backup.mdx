@@ -1,0 +1,155 @@
+import RegularComponent from './regular-component';
+import { DarkSlide, Notes, CodeSlide } from './slides';
+
+
+export const transition = ['zoom','fade']
+
+# DevOps + Security Automation
+
+---
+
+export const transition = ['zoom','slide']
+
+## Contents
+
+- Challenges in SecOps / SoC
+- What We Do / How We Help
+- Deep Dive
+- Real World Examples
+
+---
+
+export const transition = ['fade','slide']
+
+## Challenges in SecOps / SoC
+
+- Short Staffed, Attrition
+- Distractions from Tactical and Strategic Goals
+- Difficult or Impossible to be Proactive
+- Disparate Systems Don't Communicate Directly
+
+---
+
+export const transition = ['fade','slide']
+
+## What We Do / How We Help
+
+- Bring DevOps Practices to Security
+- Version Control, Automated Tests, Automated Deployment
+- Bespoke Automation and Integrations
+
+---
+
+export const transition = ['fade']
+
+## Deep Dive
+
+- Infrastructure As Code
+- Policy As Code
+- Version Control
+- Vaulting, OIDC
+- API Integrations
+
+---
+
+
+export const transition = ['slide']
+
+## Real World Examples
+
+- Paved Roads Initiative
+- Image Scanning API 
+- Landing Zones 
+- Identity Proxy
+
+---
+
+export default CodeSlide
+
+## Creating an Ingress Gateway
+
+```yaml
+$ kubectl apply -f - <<EOF
+apiVersion: networking.istio.io/v1alpha3
+kind: Gateway
+metadata:
+  name: httpbin-gateway
+spec:
+  selector:
+    istio: ingressgateway # use Istio default gateway implementation
+  servers:
+  - port:
+      number: 80
+      name: http
+      protocol: HTTP
+    hosts:
+    - "httpbin.example.com"
+EOF
+
+```
+
+---
+
+export default CodeSlide
+
+## Adding Routes for APIs
+
+```yaml
+$ kubectl apply -f - <<EOF
+apiVersion: networking.istio.io/v1alpha3
+kind: VirtualService
+metadata:
+  name: httpbin
+spec:
+  hosts:
+  - "httpbin.example.com"
+  gateways:
+  - httpbin-gateway
+  http:
+  - match:
+    - uri:
+        prefix: /status
+    - uri:
+        prefix: /delay
+    route:
+    - destination:
+        port:
+          number: 8000
+        host: httpbin
+EOF
+```
+---
+
+export default DarkSlide
+
+export const transition = ['fade','zoom']
+
+![Security_Automation](./Security_Automation.png)
+
+---
+
+export default DarkSlide
+
+export const transition = ['fade']
+
+![Terraform](./Terraform.png)
+
+---
+
+export default DarkSlide
+
+export const transition = ['fade','zoom']
+
+### CI/CD Pipelines Test Infrastructure First
+
+* ![Gitlab_Pipelines](./gitlab_pipelines_status.png)
+
+---
+
+export default DarkSlide
+
+export const transition = ['fade','zoom']
+
+### Infrastructure With Security Baked In
+
+* ![Terraform_Cloud](./terraform_cloud.png)
