@@ -1,10 +1,10 @@
 import createTheme from "../../createTheme";
 
 const colors = {
-  primary: "#4c4c4c", // Background
-  secondary: "#97fd00", // Font color
-  tertiary: "#41A6C9", // ?
-  quaternary: "#DF6425" // Widgets
+  primary: "#0f0e21", // Background
+  secondary: "#8d1fb1", // Font color
+  tertiary: "#c3c2c7", // ?
+  quaternary: "#2d24cf" // Widgets
 };
 
 const theme = createTheme(
